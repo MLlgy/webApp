@@ -4,13 +4,24 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+
+    <!--servlet配置-->
+    <!--访问路径： localhost:8080/HelloWorld-->
     <servlet>
         <servlet-name>HelloWord</servlet-name>
         <servlet-class>com.mk.servlet.HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        
         <servlet-name>HelloWord</servlet-name>
         <url-pattern>/HelloWorld</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloWord1</servlet-name>
+        <servlet-class>com.mk.servlet.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWord1</servlet-name>
+        <url-pattern>/HelloWorld1</url-pattern>
     </servlet-mapping>
 </web-app>

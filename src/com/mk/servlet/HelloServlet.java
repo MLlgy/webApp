@@ -13,14 +13,27 @@ import java.io.PrintWriter;
  * servlet编程
  */
 public class HelloServlet extends HttpServlet{
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        process(req, resp,"get");
+    }
+
+
+
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        process(req,resp,"post");
+    }
+
+    private void process(HttpServletRequest req, HttpServletResponse resp,String method) throws IOException {
         resp.setContentType("text/html");
         PrintWriter writer = resp.getWriter();
 
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+
         writer.println("<html><head><title>Hello World</title></head>");
 
-        writer.println("<body><h1>Hello World</h1></body></html>");
+        writer.println("<body><h1>name:"+username+"   password:"+ password+" 方法 "+ method+"</h1></body></html>");
 
         writer.flush();
     }
