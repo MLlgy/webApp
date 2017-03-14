@@ -11,17 +11,38 @@
         <servlet-name>HelloWord</servlet-name>
         <servlet-class>com.mk.servlet.HelloServlet</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>HelloWord</servlet-name>
-        <url-pattern>/HelloWorld</url-pattern>
-    </servlet-mapping>
 
     <servlet>
         <servlet-name>HelloWord1</servlet-name>
         <servlet-class>com.mk.servlet.HelloServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.mk.servlet.TestServlet</servlet-class>
+    </servlet>
+
+
+
+
+
+
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/TestServlet</url-pattern>
+    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>HelloWord1</servlet-name>
         <url-pattern>/HelloWorld1</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HelloWord</servlet-name>
+        <url-pattern>/HelloWorld</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
 </web-app>
