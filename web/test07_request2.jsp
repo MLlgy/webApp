@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: mk.io
   Date: 17-3-19
-  Time: 下午12:15
+  Time: 下午1:23
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,14 +10,16 @@
 <head>
     <title>Title</title>
 </head>
-<body >
+<body>
+    <%
+        String name = request.getParameter("name");
+    %>
+        name: <%= name%>
+        <%
+         request.setAttribute("username",name);
+        %>
 
-<form action="test06_session2.jsp">
-
-    名字是：<input type="text" name="name"><br>
-
-    <input type="submit" value="submit"/>
-</form>
+        <jsp:forward page="test07_request3.jsp"></jsp:forward>
 
 </body>
 </html>

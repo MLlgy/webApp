@@ -14,7 +14,7 @@
 
 <form action="test06_session2.jsp">
 
-    名字：<input type="text" name="name"><br>
+    名字是：<input type="text" name="name"><br>
 
     <input type="submit" value="submit"/>
 </form>
