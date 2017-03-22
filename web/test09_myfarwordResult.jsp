@@ -1,4 +1,5 @@
-<%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: mk.io
   Date: 17-3-21
@@ -11,6 +12,17 @@
     <title>Title</title>
 </head>
 <body>
-    username:<%=request.getAttribute("username") %>
+username:<%=request.getAttribute("username") %>
+
+<%
+
+    List<String> list = (List<String>) request.getAttribute("list");
+    for (int j = 0; j < list.size(); j++) {
+        out.print(j);
+
+%>
+
+<% }
+%>
 </body>
 </html>
