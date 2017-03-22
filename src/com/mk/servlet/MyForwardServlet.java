@@ -15,8 +15,8 @@ public class MyForwardServlet extends HttpServlet {
         String name = req.getParameter("username");
 
         req.setAttribute("username",name);
-
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("test09_farword.jsp");
+        //请求转发
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("test09_myfarwordResult.jsp");
 
         requestDispatcher.forward(req,resp);
     }

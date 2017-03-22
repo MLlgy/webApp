@@ -21,7 +21,7 @@
         <servlet-class>com.mk.servlet.TestServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>MyForward</servlet-name>
+        <servlet-name>MyForwardServlet</servlet-name>
         <servlet-class>com.mk.servlet.MyForwardServlet</servlet-class>
     </servlet>
 
@@ -45,8 +45,8 @@
         <url-pattern>/HelloWorld</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>MyForward</servlet-name>
-        <url-pattern>/MyForward</url-pattern>
+        <servlet-name>MyForwardServlet</servlet-name>
+        <url-pattern>/MyForwardServlet</url-pattern>
     </servlet-mapping>
 
 
