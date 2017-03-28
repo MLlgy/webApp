@@ -11,15 +11,7 @@
     <title>success</title>
 </head>
 <body>
-    usernaem:<%=request.getAttribute("username")%>
+    usernaem:<%=request.getAttribute("username")%><br>
     password:<%=request.getAttribute("password")%>
-    <%--<%--%>
-        <%--String name = (String) request.getAttribute("username");--%>
-        <%--String password = (String) request.getAttribute("password");--%>
-        <%--name:<%= name%>--%>
-        <%--password:<%= password%>--%>
-
-    <%--%>--%>
-
 </body>
 </html>

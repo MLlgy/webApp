@@ -27,9 +27,9 @@
         Person person1 = new Person();
         out.println(person1.getAddress());
     %>
-    <%--此时的请求url为：http://localhost:8080/test11_javaBean.jsp?hellll=4545--%>
-    <jsp:setProperty name="person" property="age" param="hellll"  />
 
-    <jsp:getProperty name="person" property="age" />
+    <jsp:setProperty name="person" property="age" param="hellll"/>
+
+    <jsp:getProperty name="person" property="age"/>
 </body>
 </html>
