@@ -24,6 +24,10 @@
         <servlet-name>MyForwardServlet</servlet-name>
         <servlet-class>com.mk.servlet.MyForwardServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>TenServlet</servlet-name>
+        <servlet-class>com.mk.servlet.ValidataServlet</servlet-class>
+    </servlet>
 
 
 
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>MyForwardServlet</servlet-name>
         <url-pattern>/MyForwardServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TenServlet</servlet-name>
+        <url-pattern>/ValidataServlet</url-pattern>
     </servlet-mapping>
 
 

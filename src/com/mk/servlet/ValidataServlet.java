@@ -16,8 +16,18 @@ public class ValidataServlet extends HttpServlet{
         String name = req.getParameter("username");
         String password = req.getParameter("password");
         String repassWord = req.getParameter("repassword");
-        if("".equals(name)){
-            req.setA
+        if("".equals(name)||"".equals(password)||!password.equals(repassWord)){
+            req.setAttribute("error","信息错误");
+            req.getRequestDispatcher("test10_error.jsp").forward(req,resp);
+        }else{
+            req.setAttribute("username",name);
+            req.setAttribute("password",password);
+            req.getRequestDispatcher("test10_sucess.jsp").forward(req,resp);
         }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        this.doGet(req,resp);
     }
 }
