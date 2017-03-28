@@ -14,15 +14,18 @@
 <body>
 username:<%=request.getAttribute("username") %>
 
-<%
 
-    List<String> list = (List<String>) request.getAttribute("list");
-    for (int j = 0; j < list.size(); j++) {
-        out.print(j);
+rewsef
 
-%>
+<%--<%--%>
 
-<% }
-%>
-</body>
+    <%--List<String> list = (List<String>) request.getAttribute("list");--%>
+    <%--for (int j = 0; j < list.size(); j++) {--%>
+        <%--out.print(j);--%>
+
+<%--%>--%>
+
+<%--<% }--%>
+<%--%>--%>
+<%--</body>--%>
 </html>

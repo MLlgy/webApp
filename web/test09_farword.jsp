@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="MyForwardServlet">
+    <form action="MyForwardServlet" method="post">
     username : <input type="text" name="username">
         <input type="submit"  value="submit">
     </form>
